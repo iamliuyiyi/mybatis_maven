@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yy.mapper.StudentMapper">
+<!--    <select id="getList" resultType="Student">-->
+<!--        select * from student;-->
+<!--    </select>-->
+
+<!--    <select id="getStudentById" resultType="Student">-->
+<!--        select * from student where id = #{id};-->
+<!--    </select>-->
+
+<!--    <insert id="add" parameterType="Student">-->
+<!--        insert into Student(name,sex,address,birthday) values(#{name},#{sex},#{address},#{birthday});-->
+<!--    </insert>-->
+
+    <!--    为什么这里不能用'%#{name}%'-->
+    <!--    select * from student where name like concat('%',#{name},'%');-->
+<!--    select * from student where name like '%${name}%';-->
+<!--    sql注入-->
+<!--    <select id="getListByName" parameterType="java.lang.String" resultType="Student">-->
+<!--        select * from student where name like concat('%',#{name},'%');-->
+<!--    </select>-->
+
+<!--    <update id="updateById" parameterType="Student">-->
+<!--        update student set name = #{student.name},address= #{student.address} where id = #{student.id};-->
+<!--    </update>-->
+
+<!--    <update id="updateByMap" parameterType="map">-->
+<!--        update student set name = #{name},address= #{address} where id = #{id};-->
+<!--    </update>-->
+</mapper>

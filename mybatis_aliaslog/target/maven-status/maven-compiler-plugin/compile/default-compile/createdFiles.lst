@@ -1,0 +1,4 @@
+com\yy\pojo\Student.class
+com\yy\pojo\Teacher.class
+com\yy\utils\MybatisUtils.class
+com\yy\mapper\StudentMapper.class
