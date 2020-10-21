@@ -26,5 +26,7 @@
     <mappers>
         <!--使用class条件：xml必须和接口在一个目录下，且同名-->
         <mapper class="com.yy.mapper.StudentMapper"/>
+        <mapper class="com.yy.mapper.TeacherMapper"/>
+        <mapper class="com.yy.mapper.Student1Mapper"/>
     </mappers>
 </configuration>
