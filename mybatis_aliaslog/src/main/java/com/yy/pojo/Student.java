@@ -14,7 +14,7 @@ import java.util.Date;
  */
 //@Alias("stu")  //意思是存在student、Student、stu别名
 @Data
-@AllArgsConstructor  //所有参数的有参构造方法
+@AllArgsConstructor  //全参构造方法
 @NoArgsConstructor   //无参构造方法
 public class Student {
     private int id;
@@ -30,4 +30,31 @@ public class Student {
         this.address = address;
         this.birthday = birthday;
     }
+
+    public Student(String name, String sex, Date birthday) {
+        this.name = name;
+        this.sex = sex;
+        this.birthday = birthday;
+    }
+
+    public Student(String name, Date birthday) {
+        this.name = name;
+        this.birthday = birthday;
+    }
+
+
+    public Student(int id,String name, String address, Date birthday) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.birthday = birthday;
+    }
+
+    public Student(int id,String name, String address) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+    }
+
+
 }
